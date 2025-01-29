@@ -1,0 +1,1212 @@
+/* WatchList Styles */
+
+.watchlist-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.counts {
+  font-size: 14px;
+  color: #777;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.watchlist-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.watchlist-item:hover {
+  transform: scale(1.02);
+}
+
+.stock-name {
+  font-weight: bold;
+}
+
+.itemInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-buy {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.btn-buy:hover {
+  background-color: #43a047 !important;
+}
+
+.btn-sell {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.btn-sell:hover {
+  background-color: #e78b89 !important;
+}
+
+.btn-analytics {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.btn-analytics:hover {
+  background-color: #449cea !important;
+}
+
+.btn-more {
+  background-color: #607d8b;
+  color: #fff;
+}
+
+.btn-more:hover {
+  background-color: #70a3bb !important;
+}
+
+.up {
+  color: #4caf50;
+}
+
+.down {
+  color: #f44336;
+}
+
+/* Container for Holdings */
+.holdings-container {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.holdings-content {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+
+  font-family: "Roboto", sans-serif;
+}
+
+/* Styling the title */
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Styling for the table */
+.order-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.order-table th,
+.order-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-table th {
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Profit and loss styling */
+.profit {
+  color: #28a745;
+}
+
+.loss {
+  color: #dc3545;
+}
+
+/* Styling the row colors */
+.order-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Styling for summary rows */
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.row .col {
+  width: 32%;
+  text-align: center;
+}
+
+.row h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.row p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Small screen responsiveness (<= 768px) */
+@media (max-width: 768px) {
+  .holdings-container {
+    margin-top: 1rem;
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .holdings-content {
+    width: 90%;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row .col {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Small screen styling for table */
+@media (max-width: 600px) {
+  .order-table table {
+    font-size: 0.9rem;
+  }
+  .holdings-container {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .order-table th,
+  .order-table td {
+    padding: 8px;
+  }
+}
+
+/* Container for Positions */
+.positions-container {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* On large screens (>= 1024px), it will take up 60% of the screen */
+.positions-content {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+
+  font-family: "Roboto", sans-serif;
+}
+
+/* Styling the title */
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Styling for the table */
+.order-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.order-table th,
+.order-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-table th {
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Profit and loss styling */
+.profit {
+  color: #28a745;
+}
+
+.loss {
+  color: #dc3545;
+}
+
+/* Styling the row colors */
+.order-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Styling for summary rows */
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.row .col {
+  width: 32%;
+  text-align: center;
+}
+
+.row h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.row p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Small screen responsiveness (<= 768px) */
+@media (max-width: 768px) {
+  .positions-container {
+    margin-top: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .positions-content {
+    width: 90%;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row .col {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Small screen styling for table */
+@media (max-width: 600px) {
+  .order-table table {
+    font-size: 0.9rem;
+  }
+  .positions-container {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .order-table th,
+  .order-table td {
+    padding: 8px;
+  }
+}
+
+/* Styling for the main Funds container */
+.funds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #f7f8fa;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.funds p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Button Styling */
+.funds .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  margin: 0.5rem;
+  text-decoration: none;
+}
+
+.funds .btn-success {
+  background-color: #28a745;
+  color: white;
+  transition: all 0.3s;
+}
+
+.funds .btn-info {
+  background-color: #17a2b8;
+  color: white;
+  transition: all 0.3s;
+}
+
+.funds .btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Row layout for columns */
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.col {
+  flex: 1;
+  margin-right: 1.5rem;
+}
+
+/* Table styling for financial data */
+.table {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.data p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.imp {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.imp.colored {
+  color: #28a745; /* Green color for important financial data */
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 1.5rem 0;
+}
+
+/* Styling for the commodity account section */
+.commodity {
+  background-color: #f0f0f0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.commodity p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.commodity .btn-primary {
+  background-color: #007bff;
+  color: white;
+  padding: 0.7rem 1.8rem;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.commodity .btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .funds {
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .table {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .commodity {
+    width: 100%;
+  }
+
+  .imp {
+    font-size: 1rem;
+  }
+}
+
+/* Styling for the main Summary container */
+.username {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.username h6 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 1rem 0;
+}
+
+/* Section Styling */
+.section {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  margin-top: 1.5rem;
+}
+
+.section p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.section .data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.first {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.second {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.second p {
+  margin-bottom: 0.5rem;
+}
+
+.second span {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Profit styling for the P&L section */
+.profit {
+  color: #28a745;
+}
+
+.profit small {
+  color: #28a745;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Styling for the Holding and P&L section */
+.section .first h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .username h6 {
+    font-size: 1.2rem;
+  }
+
+  .section .data {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section .data .first,
+  .section .data .second {
+    font-size: 1.2rem;
+  }
+
+  .section .first h3 {
+    font-size: 1.5rem;
+  }
+}
+/* General table styling */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow-x: auto; /* Ensures horizontal scroll on small screens */
+}
+
+/* Styling for table headers and cells */
+.orders-table th,
+.orders-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Header styling */
+.orders-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Hover effect on table rows */
+.orders-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* For Medium Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .orders-table th,
+  .orders-table td {
+    padding: 8px; /* Reduce padding for medium screens */
+  }
+
+  .orders-table {
+    font-size: 14px; /* Adjust font size */
+  }
+}
+
+/* For Small Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .orders-table th,
+  .orders-table td {
+    padding: 6px; /* Further reduce padding */
+  }
+
+  .orders-table {
+    font-size: 12px; /* Adjust font size */
+  }
+
+  .orders-table-container {
+    overflow-x: auto; /* Add horizontal scrolling on small screens */
+  }
+}
+
+/* For Extra Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .orders-table th,
+  .orders-table td {
+    padding: 4px; /* Reduce padding for extra small screens */
+  }
+
+  .orders-table {
+    font-size: 10px; /* Adjust font size */
+  }
+  .orders-button {
+    padding: 5px 5px;
+    min-width: 25px;
+    font-size: 10px;
+  }
+}
+
+/* General Layout and Container */
+.dashboard-container {
+  padding: 20px;
+}
+
+.username {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.username h6 {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.divider {
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Section Layout */
+.section {
+  margin-bottom: 30px;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first,
+.second {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.first h3,
+.second h3 {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+.first p,
+.second p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.second span {
+  font-weight: 600;
+  color: #000;
+}
+
+/* Profit Styling */
+.profit {
+  color: #27ae60;
+}
+
+.positive {
+  font-size: 0.9rem;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* Recent Activity Section */
+.recent-activity {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recent-activity li {
+  background-color: #f4f4f4;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recent-activity li span {
+  font-size: 1rem;
+  color: #333;
+}
+
+.timestamp {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .data {
+    flex-direction: column;
+  }
+
+  .first h3,
+  .second h3 {
+    font-size: 1.2rem;
+  }
+
+  .recent-activity li {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .recent-activity li span {
+    margin-bottom: 5px;
+  }
+}
+
+.topbar-container {
+  box-shadow: none;
+}
+
+/* Default Menu Container */
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+  /* top: 60px; */
+  left: 0;
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+  height: 100%; /* Full height for menu */
+}
+
+/* For Small Screens (max-width 900px) */
+@media (max-width: 900px) {
+  .menu-container {
+    display: none; /* Hidden on small screens by default */
+  }
+
+  .menu-container.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Set a fixed width for the menu */
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+
+  /* Style menu items */
+  .menus ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  .menus li {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: left;
+  }
+
+  .menu {
+    padding: 15px;
+    font-size: 18px;
+    color: black;
+    transition: background-color 0.3s ease;
+  }
+
+  .menu.selected {
+    background-color: #f0f0f0;
+  }
+
+  .profile {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+  }
+
+  /* Style the hamburger icon */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .hamburger .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+  }
+}
+
+/* No changes for Large Screens (min-width 900px) */
+@media (min-width: 900px) {
+  .menu-container {
+    display: flex; /* Ensure it's displayed as a regular menu */
+    position: relative;
+    background-color: transparent;
+    box-shadow: none;
+    width: auto;
+    height: auto;
+  }
+
+  .menus ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .menus li {
+    padding: 10px 15px;
+  }
+
+  .profile {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger icon on large screens */
+  }
+}
+
+@media (max-width: 1024px) {
+  .dashboard-container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+    min-height: 900px;
+  }
+
+  .content {
+    margin-top: 20px;
+  }
+}
+
+/* Small Screens (max-width 768px) */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 10px;
+    min-height: 900px;
+  }
+
+  .content {
+    margin-top: 20px;
+  }
+
+  /* Summary section should take full width */
+  .section {
+    width: 100%;
+  }
+
+  .username,
+  .section-title {
+    font-size: 18px;
+  }
+
+  .data {
+    width: 100%;
+  }
+
+  .first,
+  .second {
+    width: 100%;
+  }
+
+  .recent-activity {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+  }
+
+  .recent-activity li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .username h6 {
+    font-size: 16px; /* Smaller font for very small screens */
+  }
+
+  .section-title {
+    font-size: 16px; /* Adjust section title font size */
+  }
+
+  .data {
+    font-size: 14px; /* Smaller font size for data */
+  }
+
+  .recent-activity li span {
+    font-size: 14px;
+  }
+}
+
+/* General styling for the watchlist container */
+.watchlist-container {
+  width: 100%;
+  height: calc(100vh - 80px); /* Keep this fixed height for large screens */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+/* For Medium Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .watchlist-container {
+    min-height: 400px; /* Let height grow based on content for medium screens */
+    padding: 15px;
+  }
+}
+
+/* For Small Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .watchlist-container {
+    min-height: 400px; /* Remove fixed height to allow for content expansion */
+    padding: 10px;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .doughnut-chart {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .watchlist-container {
+    padding: 5px;
+  }
+
+  .doughnut-chart {
+    height: 250px;
+  }
+}
+/* Ensure the parent container for the graph stretches properly */
+.vertical-graph {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+}
+
+/* For Small Screens (max-width: 768px) */
+@media (max-width: 650px) {
+  .vertical-graph {
+    display: none;
+  }
+}
+
+/* General container styling */
+#buy-window {
+  width: 450px;
+  max-width: 90%;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Make it draggable */
+#buy-window:active {
+  cursor: grabbing;
+}
+
+/* Input Fields */
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+fieldset legend {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+}
+
+fieldset:focus-within {
+  border-color: #007bff;
+  box-shadow: 0px 0px 6px rgba(0, 123, 255, 0.3);
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.buttons span {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Primary (Buy) Button */
+.btn-primary {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+.btn-primary:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Secondary (Cancel) Button */
+.btn-secondary {
+  background: #dc3545;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-secondary:hover {
+  background: #a71d2a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #buy-window {
+    width: 95%;
+    padding: 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    padding: 12px;
+    min-width: fit-content;
+  }
+}
