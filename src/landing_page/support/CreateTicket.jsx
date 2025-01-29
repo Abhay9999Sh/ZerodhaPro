@@ -4,195 +4,81 @@ const CreateTicket = () => {
   return (
     <div className="container">
       <div className="row p-5 mt-5 mb-5 createTicket">
-        <h1 className="fs-5 p-5 pb-0 text-muted">
+        <h1 className="fs-5 py-5 mb-5 pb-0 text-muted">
           To create a ticket, select a relevant topic
         </h1>
-      
-        <div
-          className="col-lg-4 col-md-6 col-sm-12 row p-5"
-          style={{ fontFamily: "sans-serif", fontSize: "0.85rem" }}
-        >
-          <h4 className="fs-6 mb-4">
-            <i className="fa-solid fa-circle-plus"></i> Account Opening
-          </h4>
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Getting started
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Online
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Offline
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Charges
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Company, Partnership and HUF
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Non Resident Indian (NRI)
-          </a>
-          <br />
-        </div>
-       
-        <div
-          className="col-lg-4 col-md-6 col-sm-12 row p-5"
-          style={{ fontFamily: "sans-serif", fontSize: "0.85rem" }}
-        >
-          <h4 className="fs-6 mb-4">
-            <i className="fa-regular fa-user"></i> Your Zerodha Account
-          </h4>
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Login credentials
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Your Profile
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Account modification and segment addition
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            CMR & DP ID
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Nomination
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Transfer and conversion of shares
-          </a>
-          <br />
-        </div>
-        {/* Trading and Markets */}
-        <div
-          className="col-lg-4 col-md-6 col-sm-12 row p-5"
-          style={{ fontFamily: "sans-serif", fontSize: "0.85rem" }}
-        >
-          <h4 className="fs-6 mb-4">
-            <i className="fa-solid fa-trademark"></i> Trading and Markets
-          </h4>
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Trading FAQs
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Kite
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Margins
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Product and order types
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Corporate actions
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Kite features
-          </a>
-          <br />
-        </div>
-        {/* Funds */}
-        <div
-          className="col-lg-4 col-md-6 col-sm-12 row p-5"
-          style={{ fontFamily: "sans-serif", fontSize: "0.85rem" }}
-        >
-          <h4 className="fs-6 mb-4">
-            <i className="fa-solid fa-credit-card"></i> Funds
-          </h4>
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Fund withdrawal
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Adding funds
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Adding bank accounts
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            eMandates
-          </a>
-          <br />
-        </div>
-        {/* Console */}
-        <div
-          className="col-lg-4 col-md-6 col-sm-12 row p-5"
-          style={{ fontFamily: "sans-serif", fontSize: "0.85rem" }}
-        >
-          <h4 className="fs-6 mb-4">
-            <i className="fa-brands fa-creative-commons-sa"></i> Console
-          </h4>
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            IPO
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Portfolio
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Funds statement
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Profile
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Reports
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Referral program
-          </a>
-          <br />
-        </div>
-        {/* Coin */}
-        <div
-          className="col-lg-4 col-md-6 col-sm-12 row p-5"
-          style={{ fontFamily: "sans-serif", fontSize: "0.85rem" }}
-        >
-          <h4 className="fs-6 mb-4">
-            <i className="fa-solid fa-coins"></i> Coin
-          </h4>
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Understanding mutual funds and Coin
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Coin app
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Coin web
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            Transactions and reports
-          </a>
-          <br />
-          <a href="" style={{ textDecoration: "none", lineHeight: "2" }}>
-            National Pension Scheme (NPS)
-          </a>
-          <br />
-        </div>
+
+        {/* Ticket Categories */}
+        {[
+          {
+            icon: "fa-circle-plus",
+            title: "Account Opening",
+            links: [
+              "Getting started",
+              "Online",
+              "Offline",
+              "Charges",
+              "Company, Partnership and HUF",
+              "Non Resident Indian (NRI)",
+            ],
+          },
+          {
+            icon: "fa-user",
+            title: "Your Zerodha Account",
+            links: [
+              "Login credentials",
+              "Your Profile",
+              "Account modification and segment addition",
+              "CMR & DP ID",
+              "Nomination",
+              "Transfer and conversion of shares",
+            ],
+          },
+          {
+            icon: "fa-trademark",
+            title: "Trading and Markets",
+            links: [
+              "Trading FAQs",
+              "Kite",
+              "Margins",
+              "Product and order types",
+              "Corporate actions",
+              "Kite features",
+            ],
+          },
+          {
+            icon: "fa-credit-card",
+            title: "Funds",
+            links: ["Fund withdrawal", "Adding funds", "Adding bank accounts", "eMandates"],
+          },
+          {
+            icon: "fa-creative-commons-sa",
+            title: "Console",
+            links: ["IPO", "Portfolio", "Funds statement", "Profile", "Reports", "Referral program"],
+          },
+          {
+            icon: "fa-coins",
+            title: "Coin",
+            links: [
+              "Understanding mutual funds and Coin",
+              "Coin app",
+              "Coin web",
+              "Transactions and reports",
+              "National Pension Scheme (NPS)",
+            ],
+          },
+        ].map((category, index) => (
+          <div key={index} className="col-lg-4 col-md-6 col-sm-12 p-4">
+            <h4 className="fs-6 mb-4">
+              <i className={`fa-solid ${category.icon}`}></i> {category.title}
+            </h4>
+            {category.links.map((link, idx) => (
+              <a key={idx} href="#" className="d-block text-decoration-none mb-2">
+                {link}
+              </a>
+            ))}
+          </div>
+        ))}
       </div>
     </div>
   );

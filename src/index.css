@@ -31,36 +31,170 @@ button:hover {
 a:hover {
   color: rgb(80, 80, 190) !important;
 }
-
-#supportHero {
+#supportHero{
   background-color: rgb(56, 126, 209);
   color: white;
 }
 
-#supportHero a {
+#supportHero a{
+  color: white;
+}
+
+#supportWrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+
+#supportHero input{
+  padding: 20px 50px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+}
+
+/* Hero Section */
+.hero-container {
+  background-color: rgb(56, 126, 209);
+  color: white;
+  padding: 40px 10%;
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hero-wrapper h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.hero-wrapper a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+
+.hero-wrapper a:hover {
+  text-decoration: underline;
+}
+
+.hero-wrapper a:hover {
+  text-decoration: underline !important;
   color: white !important;
+
 }
 
-@media (min-width: 800px) {
-  #supportWrapper {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 150px;
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 20px;
+}
+
+.hero-left,
+.hero-right {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.hero-left h1,
+.hero-right h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+.hero-left input {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.hero-left input:focus {
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Links */
+.links a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #b3e5fc !important;
+  text-decoration: underline !important; /* Add underline on hover */
+}
+
+/* Featured List */
+.hero-right ol {
+  padding-left: 20px;
+}
+
+.hero-right li {
+  margin-bottom: 10px;
+}
+
+.hero-right a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.hero-right a:hover {
+  color: #b3e5fc !important;
+  text-decoration: underline !important; /* Add underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .hero-content {
+    grid-template-columns: 1fr;
   }
 
-  #supportQuery {
-    margin: 0 150px;
-  }
-
-  #supportHero input {
-    padding: 20px 50px;
-    width: 100%;
-    margin: 20px 0;
-    font-size: 0.8rem;
-    border-radius: 10px;
-    border: none;
+  .hero-left,
+  .hero-right {
+    padding: 20px;
   }
 }
+
+@media (max-width: 600px) {
+  .hero-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left h1,
+  .hero-right h1 {
+    font-size: 20px;
+  }
+
+  .hero-left input {
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+}
+
 .create-account-link:hover {
   color: #fff; /* Set text color on hover */
   background-color: #0056b3; /* Adjust to your desired hover background color */
@@ -1006,3 +1140,5 @@ a {
 .nav-link {
   font-size: 0.9rem;
 }
+
+
