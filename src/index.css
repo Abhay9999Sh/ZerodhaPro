@@ -1002,3 +1002,7 @@ a:hover {
 a {
   text-decoration: none !important;
 }
+
+* {
+  font-size: 1.2rem;
+}
