@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { auth } from "../../../config/firebase.js";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
+
 import { Link } from "react-router-dom";
 
 const SignUp = () => {
@@ -10,21 +11,26 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
-  const handleCreateUser = async (e) => {
-    e.preventDefault();
-    if (password !== confirmPassword) {
-      setError("Passwords do not match.");
-      return;
-    }
-    setError("");
-    try {
-      await createUserWithEmailAndPassword(auth, email, password);
-      alert("User created successfully");
-    } catch (err) {
-      setError(err.message);
-    }
-  };
+ 
+    const handleCreateUser = async (e) => {
+      e.preventDefault();
+      if (password !== confirmPassword) {
+        setError("Passwords do not match.");
+        return;
+      }
+      setError("");
+      try {
+        await createUserWithEmailAndPassword(auth, email, password);
+        // Store success message in sessionStorage
+        sessionStorage.setItem("signupMessage", "SignUp successful!");
+        navigate("/", { replace: true }); // Redirect to homepage
+        window.scrollTo(0, 0); 
+      } catch (err) {
+        setError(err.message);
+      }
+    };
 
   return (
     <div className="container mt-5 d-flex justify-content-center">

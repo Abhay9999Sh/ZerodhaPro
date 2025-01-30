@@ -9,7 +9,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      setUser(currentUser); // Set the user
+      setUser(currentUser); 
     });
     return () => unsubscribe();
   }, [auth]);
@@ -17,8 +17,10 @@ const Navbar = () => {
   const handleSignOut = async () => {
     try {
       await signOut(auth);
-      setUser(null); // Clear the user state
-      navigate("/"); // Redirect to the homepage after signing out
+      setUser(null); 
+      sessionStorage.setItem("signupMessage", "SignOut successful!");
+      navigate("/", { replace: true }); // Redirect to homepage
+      window.scrollTo(0, 0);
     } catch (error) {
       console.error("Error signing out:", error.message);
     }

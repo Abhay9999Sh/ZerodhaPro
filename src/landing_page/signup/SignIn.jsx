@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { auth } from "../../../config/firebase.js";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
-// import "bootstrap/dist/css/bootstrap.min.css"; // Uncomment if needed
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const SignIn = () => {
@@ -21,15 +20,13 @@ const SignIn = () => {
       );
       const user = userCredential.user;
 
-      // Get Firebase ID Token
       const token = await user.getIdToken();
 
-      // Optionally, store the token in localStorage (useful for persistent sessions)
       localStorage.setItem("firebase_token", token);
 
-      // Navigate to the dashboard with the token in the URL (or use localStorage)
-      navigate(`/`);
-      alert("Signed in successfully");
+      sessionStorage.setItem("signupMessage", "SignIn successful!");
+      navigate("/", { replace: true });
+      window.scrollTo(0, 0);
     } catch (err) {
       setError(err.message);
     }
