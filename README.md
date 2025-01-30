@@ -43,7 +43,7 @@ A **full-stack** **MERN trading platform** that allows users to **buy/sell stock
 ---
 ## **📡 Backend Repository**
 Check out the backend repository for API documentation and setup instructions:  
-[Backend GitHub Repo](https://github.com/your-backend-repo)
+[Backend GitHub Repo](https://github.com/Abhay9999Sh/Zerodha-Backend)
 
 ---
 
