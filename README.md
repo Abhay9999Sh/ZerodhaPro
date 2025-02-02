@@ -48,7 +48,7 @@ Check out the backend repository for API documentation and setup instructions:
 ---
 
 ## **📸 Demo Video**
-Check out the demo of the app in action on my [LinkedIn post](https://www.linkedin.com/posts/your-linkedin-post-link).
+Check out the demo of the app in action on my [LinkedIn post](https://www.linkedin.com/posts/abhay-sharma-151912286_react-mern-tradingapp-activity-7291024918115192832--koo?utm_source=share&utm_medium=member_desktop).
 
 ---
 
