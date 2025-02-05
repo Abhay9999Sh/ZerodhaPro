@@ -28,7 +28,7 @@ A **full-stack** **MERN trading platform** that allows users to **buy/sell stock
 ## **✨ Features**
 
 - 🔐 **User Authentication**: Secure login/signup via Firebase Authentication.
-- 📈 **Real-Time Stock Dashboard**: Display live stock prices, holdings, and P&L.
+- 📈 **Stock Dashboard**: Display stock prices, holdings, and P&L.
 - 💸 **Buy/Sell Stocks**: Easy one-click stock transactions.
 - 📊 **Data Visualization**: Interactive charts and graphs for performance tracking.
 - 🛒 **Funds Management**: Manage deposits, withdrawals, and balance tracking.
